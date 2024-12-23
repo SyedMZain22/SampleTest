@@ -10,6 +10,6 @@ def generate_random_password(length=12):
     
     return password
 
-# Generate and print a random password of length 12
-random_password = generate_random_password()
-print(f"Generated Random Password: {random_password}")
+with open('password_output.txt', 'w') as f:
+    f.write(f"Generated Random Password: {random_password}")
+
